@@ -249,7 +249,7 @@ window.addEventListener('scroll',()=>{
     if (scrollTop >= 18200) {
         content[5].style.top = '100%'
         content[5].style.opacity = 0;
-        portIMG[0].style.backgroundImage = `url('img/port4.png')`;
+        portIMG[0].style.backgroundImage = `url('img/port4.PNG')`;
         portBlabla.innerHTML =
         `
         <h3>개인 포트폴리오 페이지</h3>
