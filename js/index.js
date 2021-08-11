@@ -166,7 +166,7 @@ window.addEventListener('scroll',()=>{
         content[2].style.opacity = 1;
         content[3].style.top = '100%'
         content[3].style.opacity = 0;
-        portIMG[0].style.backgroundImage = `url('/img/port1.png')`;
+        portIMG[0].style.backgroundImage = `url('img/port1.png')`;
         portBlabla.innerHTML =`
         <h3>종이의 집 팬페이지</h3>
         <p>개발기간:1인 소요기간:1주<br/>
@@ -192,7 +192,7 @@ window.addEventListener('scroll',()=>{
     if (scrollTop >= 14200) {
         content[3].style.top = '100%'
         content[3].style.opacity = 0;
-        portIMG[0].style.backgroundImage = `url('/img/port2.png')`;
+        portIMG[0].style.backgroundImage = `url('img/port2.png')`;
         portBlabla.innerHTML =
         `
         <h3>가오갤 팬 사이트(게임)</h3>
@@ -221,7 +221,7 @@ window.addEventListener('scroll',()=>{
     if (scrollTop >= 16200) {
         content[4].style.top = '100%'
         content[4].style.opacity = 0;
-        portIMG[0].style.backgroundImage = `url('/img/port3.png')`;
+        portIMG[0].style.backgroundImage = `url('img/port3.png')`;
         portBlabla.innerHTML =
         `
         <h3>React카카오프렌즈샵 카피 사이트</h3>
@@ -249,7 +249,7 @@ window.addEventListener('scroll',()=>{
     if (scrollTop >= 18200) {
         content[5].style.top = '100%'
         content[5].style.opacity = 0;
-        portIMG[0].style.backgroundImage = `url('/img/port4.png')`;
+        portIMG[0].style.backgroundImage = `url('img/port4.png')`;
         portBlabla.innerHTML =
         `
         <h3>개인 포트폴리오 페이지</h3>
