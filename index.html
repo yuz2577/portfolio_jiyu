@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/index.css">
+<body>
+    <div id="mainWrap">
+        <div id="progressBar">
+            <span id="bar"></span>
+        </div>
+        <div id="fixedMenu" onclick="clickedMenu()">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div id="mainFixed">
+            <div class="scrollBox scroll">
+                <div class="blueBG" src="img/blueBG.jpg">
+                    <p id="hello">반갑습니다 :)<br>
+                    저는 <span id="helloName">김지유</span>입니다.<br>
+                    <span id="helloFront">프론트엔드 신입</span>에<br>
+                    지원하였습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="aboutMe scroll">
+                <div class="title aboutMeT">ABOUT ME</div>
+                <div class="content aboutMeC">
+                    <div id="profileIMG"></div>
+                    <p>
+                        일어일문학과 재학 당시, 현지인으로서의 삶이 궁금해져 막연히<br>
+                        연고도 없던 오사카로 떠나 1년을 생활했습니다.<br>
+                        그 곳에서 개발자라는 직업을 처음 접하게 되어 귀국 후<br>
+                        개발자가 되기 위해 코딩 공부를 하던 도중 '프론트엔드'의 <br>
+                        매력을 알게 돼었습니다.<br>
+                        <br>
+                        더욱 전문적인 지식을 습득하고 싶어 2021년 3월 국비교육으로<br>
+                        프론트엔드 개발과정에 참여하게 되었습니다. <br>
+                        교육과정에서 얻은 지식으로 기초적인 HTML마크업부터, <br>
+                        CSS스타일링, JavaScript 및 React로 스스로 만든 웹사이트를<br>
+                        구현해 나감으로서 프론트엔드 개발자로서의 가능성을 보았습니다.<br>
+                        어떤 환경의 사용자도 편리하게 사용할 수 있는<br>
+                        웹을 구현하는 것이 저의 목표입니다.
+
+                        <span id="insta">
+                            <i class="fab fa-instagram"></i>
+                            <span>zlyuzu</span>
+                        </span>
+                    </p>
+
+                </div>
+            </div>
+            <div class="skill scroll">
+                <div class="skillT title">WHAT I HAVE</div>
+                <div class="content skillC">
+                    <ul id="skill1">
+                        <li>
+                            <div class="skillIMG html"></div>
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <div class="skillIMG css"></div>
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <div class="skillIMG javascript"></div>
+                            <p>Javascript</p>
+                        </li>
+                    </ul>
+                    <ul id="skill2">
+                        <li>
+                            <div class="skillIMG react"></div>
+                            <p>React</p>
+                        </li>
+                        <li>
+                            <div class="skillIMG jq"></div>
+                            <p>jQuery</p>
+                        </li>
+                        <li>
+                            <div class="skillIMG sc"></div>
+                            <p>SCSS</p>
+                        </li>
+                        <li>
+                            <div class="skillIMG bs"></div>
+                            <p>Bootstrap</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="create scroll">
+                <div class="createT title">WHAT I CREATED</div>
+                <div class="content moneyHS_c">
+                    <div class="portIMG"></div>
+
+                    <div id="portBlabla">
+                        <h3>종이의 집 팬페이지</h3>
+                        <p>개발기간:1인 소요기간:1주<br/>
+                        Javascript / SCSS / HTML</p>
+                        <p>
+                            넷플릭스 스페인 액션드라마 '종이의 집' <br>
+                            팬 사이트를 JavaScript를 통해 구현하여<br>
+                            스크롤 및 마우스 이벤트를<br>
+                            중심으로 영어 및 일본어<br>
+                            웹사이트를 구현하였습니다. 
+                        </p>
+                        <p class="goNow">바로가기</p>
+                    </div>
+                    
+                </div>
+                <div class="content portMovie">
+                    <video src="./img/1.mp4" muted loop=""></video>
+                </div>
+                <div class="content portMovie">
+                    <video src="./img/2.mp4" muted loop=""></video>
+                </div>
+                <div class="content portMovie">
+                    <video src="./img/3.mp4" muted loop=""></video>
+                </div>
+                <div class="content portMovie">
+                    <video src="./img/4.mp4" muted loop=""></video>
+                </div>
+            </div>
+            <div class="connect scroll">
+                <div class="connectC content">
+                    <div class="connectT">CONNECT</div>
+                    <i class="far fa-envelope"><span>u_1379@naver.com</span></i>
+                    <i class="fab fa-github"><span>Jiyu Kim <a href="https://github.com/yuz2577">Github</a></span></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li>WELCOME</li>
+                <li>ABOUT ME</li>
+                <li>WHAT I HAVE</li>
+                <li>WHAT I HAVE CREATED</li>
+                <li>CONNECT</li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="/js/index.js">
+
+    </script>
+</body>
+</html>

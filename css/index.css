@@ -1,0 +1,559 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+@-webkit-keyframes brightness {
+  0% {
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
+  }
+  100% {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@keyframes brightness {
+  0% {
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
+  }
+  100% {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+body {
+  background: #f1f8ff;
+}
+
+#mainWrap {
+  width: 100vw;
+  height: 23000px;
+}
+
+#mainWrap #fixedMenu {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#mainWrap #fixedMenu:hover p:last-child {
+  width: 50%;
+}
+
+#mainWrap #fixedMenu p {
+  width: 80%;
+  height: 8%;
+  background-color: pink;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 50px;
+}
+
+#mainWrap #fixedMenu p:nth-child(1) {
+  top: 30%;
+}
+
+#mainWrap #fixedMenu p:nth-child(3) {
+  top: 70%;
+  width: 50%;
+}
+
+#mainWrap #mainFixed {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#mainWrap #mainFixed .scrollBox {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+  top: 0%;
+}
+
+#mainWrap #mainFixed .scrollBox .blueBG {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/blueBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainWrap #mainFixed .scrollBox .blueBG p {
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#mainWrap #mainFixed .scrollBox .blueBG #hello {
+  color: white;
+  font-size: 7.5vh;
+  text-align: center;
+  line-height: 11vh;
+  font-weight: 700;
+}
+
+#mainWrap #mainFixed .scrollBox .blueBG #hello #helloName {
+  font-size: 9vh;
+}
+
+#mainWrap #mainFixed .scrollBox .blueBG #hello #helloFront {
+  font-size: 10vh;
+}
+
+#mainWrap #mainFixed .aboutMe {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainWrap #mainFixed .aboutMe .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: absolute;
+  top: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+#mainWrap #mainFixed .aboutMe .content #profileIMG {
+  width: 40vh;
+  height: 50vh;
+  background-image: url("/img/profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  margin-right: 5vh;
+}
+
+#mainWrap #mainFixed .aboutMe .content p {
+  font-size: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vh 0;
+}
+
+#mainWrap #mainFixed .aboutMe .content p #insta {
+  font-size: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15vh;
+  height: 7vh;
+  border-radius: 40px;
+  padding: 1vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  color: hotpink;
+}
+
+#mainWrap #mainFixed .aboutMe .content p #insta::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  position: absolute;
+  -webkit-transition: .5s;
+  transition: .5s;
+  left: 0px;
+}
+
+#mainWrap #mainFixed .aboutMe .content p #insta:hover {
+  color: white;
+}
+
+#mainWrap #mainFixed .aboutMe .content p #insta:hover::after {
+  width: 100%;
+}
+
+#mainWrap #mainFixed .aboutMe .content p #insta i {
+  position: absolute;
+  z-index: 1;
+}
+
+#mainWrap #mainFixed .aboutMe .content p #insta span {
+  font-size: 2vh;
+  margin-left: 4.5vh;
+  position: absolute;
+  z-index: 1;
+}
+
+#mainWrap #mainFixed .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainWrap #mainFixed .skill .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+  opacity: 0;
+}
+
+#mainWrap #mainFixed .skill .content ul {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainWrap #mainFixed .skill .content ul li {
+  width: 20vh;
+  height: 30vh;
+  margin: 1vh 3vh;
+}
+
+#mainWrap #mainFixed .skill .content ul li p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#mainWrap #mainFixed .skill .content ul li .skillIMG {
+  width: 100%;
+  height: 80%;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#mainWrap #mainFixed .skill .content ul li .html {
+  background-image: url("/img/free-icon-html-5-732212.png");
+}
+
+#mainWrap #mainFixed .skill .content ul li .css {
+  background-image: url("/img/pngwing.com (1).png");
+}
+
+#mainWrap #mainFixed .skill .content ul li .javascript {
+  background-image: url("/img/simbol3.011e11c6.jpg");
+}
+
+#mainWrap #mainFixed .skill .content ul li .react {
+  background-image: url("/img/512px-React-icon.svg.png");
+  background-size: cover;
+}
+
+#mainWrap #mainFixed .skill .content ul li .jq {
+  background-image: url("/img/jquery-logo.png");
+  background-size: 98%;
+}
+
+#mainWrap #mainFixed .skill .content ul li .sc {
+  background-image: url("/img/512px-Sass_Logo_Color.svg.png");
+}
+
+#mainWrap #mainFixed .skill .content ul li .bs {
+  background-image: url("/img/bootstrap-logo.png");
+}
+
+#mainWrap #mainFixed .create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainWrap #mainFixed .create .goNow {
+  border: solid 1px #4e4e4e;
+  display: inline-block;
+  padding: 1vh;
+  border-radius: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+#mainWrap #mainFixed .create .goNow:hover {
+  background: black;
+  color: white;
+}
+
+#mainWrap #mainFixed .create .moneyHS_c {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  -webkit-box-shadow: 10px 30px 50px #b3b3b3;
+          box-shadow: 10px 30px 50px #b3b3b3;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  top: 25vh;
+  background: white;
+  z-index: 2;
+}
+
+#mainWrap #mainFixed .create .moneyHS_c .portIMG {
+  width: 70vh;
+  height: 50vh;
+  background-image: url("/img/port1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mainWrap #mainFixed .create .moneyHS_c #portBlabla {
+  padding: 0 2vh;
+}
+
+#mainWrap #mainFixed .create .moneyHS_c #portBlabla h3 {
+  margin-bottom: 2vh;
+}
+
+#mainWrap #mainFixed .create .moneyHS_c #portBlabla p {
+  margin-bottom: 2vh;
+}
+
+#mainWrap #mainFixed .create .portMovie {
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  top: 100%;
+  opacity: 0;
+  -webkit-transition: .5;
+  transition: .5;
+  left: 10vh;
+  z-index: 99;
+  cursor: pointer;
+}
+
+#mainWrap #mainFixed .create .portMovie video {
+  width: 90vw;
+  height: 90vh;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 10px 10px 50px grey;
+          box-shadow: 10px 10px 50px grey;
+  border-radius: 50px;
+  background: white;
+}
+
+#mainWrap #mainFixed .connect .connectT {
+  font-size: 10vh;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 5vh;
+}
+
+#mainWrap #mainFixed .connect .connectC {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/img/blueBG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 8vh;
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  top: 100%;
+}
+
+#mainWrap #mainFixed .connect .connectC i {
+  margin: 1vh;
+}
+
+#mainWrap #mainFixed .connect .connectC i span {
+  margin: 0 3vh;
+}
+
+#mainWrap #mainFixed .connect .connectC a {
+  color: inherit;
+  font-weight: 900;
+  font-style: italic;
+}
+
+#mainWrap .scroll {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#mainWrap .title {
+  color: #788AC2;
+  font-size: 200vh;
+  position: absolute;
+  top: 2.5vh;
+  font-weight: 800;
+  white-space: nowrap;
+  display: none;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+#mainWrap .content {
+  top: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+#nav ul {
+  position: fixed;
+  left: 200%;
+  font-size: 4.5vh;
+  top: 20vh;
+  text-align: right;
+  -webkit-transition: .1s;
+  transition: .1s;
+  white-space: nowrap;
+}
+
+#nav ul li {
+  margin: 3vh 0;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: pink;
+  font-weight: 900;
+}
+
+#nav ul li:hover {
+  color: #788AC2;
+}
+
+#progressBar {
+  height: 30vh;
+  position: fixed;
+  width: 1.5vh;
+  top: 30%;
+  left: 2vh;
+  background: pink;
+  z-index: 99;
+  border-radius: 50px;
+}
+
+#progressBar #bar {
+  height: 0%;
+  position: absolute;
+  width: 1.5vh;
+  top: 0;
+  left: 0;
+  background: #9aa6c9;
+  z-index: 100;
+  border-radius: 50px;
+}
+/*# sourceMappingURL=index.css.map */
