@@ -100,7 +100,7 @@ body {
 #mainWrap #mainFixed .scrollBox .blueBG {
   width: 100vw;
   height: 100vh;
-  background-image: url(/img/blueBG.jpg);
+  background-image: url("../img/blueBG.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -174,7 +174,7 @@ body {
 #mainWrap #mainFixed .aboutMe .content #profileIMG {
   width: 40vh;
   height: 50vh;
-  background-image: url("/img/profile.jpg");
+  background-image: url("../img/profile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -316,33 +316,33 @@ body {
 }
 
 #mainWrap #mainFixed .skill .content ul li .html {
-  background-image: url("/img/free-icon-html-5-732212.png");
+  background-image: url("../img/free-icon-html-5-732212.png");
 }
 
 #mainWrap #mainFixed .skill .content ul li .css {
-  background-image: url("/img/pngwing.com (1).png");
+  background-image: url("../img/pngwing.com (1).png");
 }
 
 #mainWrap #mainFixed .skill .content ul li .javascript {
-  background-image: url("/img/simbol3.011e11c6.jpg");
+  background-image: url("../img/simbol3.011e11c6.jpg");
 }
 
 #mainWrap #mainFixed .skill .content ul li .react {
-  background-image: url("/img/512px-React-icon.svg.png");
+  background-image: url("../img/512px-React-icon.svg.png");
   background-size: cover;
 }
 
 #mainWrap #mainFixed .skill .content ul li .jq {
-  background-image: url("/img/jquery-logo.png");
+  background-image: url("../img/jquery-logo.png");
   background-size: 98%;
 }
 
 #mainWrap #mainFixed .skill .content ul li .sc {
-  background-image: url("/img/512px-Sass_Logo_Color.svg.png");
+  background-image: url("../img/512px-Sass_Logo_Color.svg.png");
 }
 
 #mainWrap #mainFixed .skill .content ul li .bs {
-  background-image: url("/img/bootstrap-logo.png");
+  background-image: url("../img/bootstrap-logo.png");
 }
 
 #mainWrap #mainFixed .create {
@@ -396,7 +396,7 @@ body {
 #mainWrap #mainFixed .create .moneyHS_c .portIMG {
   width: 70vh;
   height: 50vh;
-  background-image: url("/img/port1.png");
+  background-image: url("../img/port1.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -448,7 +448,7 @@ body {
 #mainWrap #mainFixed .connect .connectC {
   width: 100vw;
   height: 100vh;
-  background-image: url("/img/blueBG.jpg");
+  background-image: url("../img/blueBG.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
