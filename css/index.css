@@ -14,6 +14,18 @@ ul, li, ol {
   list-style: none;
 }
 
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
+}
+
 @-webkit-keyframes brightness {
   0% {
     -webkit-filter: brightness(0);
