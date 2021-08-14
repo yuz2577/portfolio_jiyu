@@ -249,17 +249,17 @@ window.addEventListener('scroll',()=>{
     if (scrollTop >= 18200) {
         content[5].style.top = '100%'
         content[5].style.opacity = 0;
-        portIMG[0].style.backgroundImage = `url('img/port4.PNG')`;
+        portIMG[0].style.backgroundImage = `url('img/port5.PNG')`;
         portBlabla.innerHTML =
         `
-        <h3>개인 포트폴리오 페이지</h3>
+        <h3>디폰데 디자인 카피 페이지</h3>
         <p>개발기간:1인 소요기간:2일<br/>
         Javascript / SCSS / HTML</p>
         <p>
-        개인 포트폴리오 페이지로, 스크롤값을 활용한<br>
-        인터랙티브 웹 페이지를 제작하였습니다. <br>
+        디폰데 브랜드의 홈페이지의 디자인만을 카피하여<br>
+        Javascript를 통한 인터랙티브 웹페이지를 제작하였습니다. <br>
         </p>
-        <a class="goNow">바로가기</a>`;
+        <a class="goNow" href="https://yuz2577.github.io/deepondeCopyJiyu/" target="_blank">바로가기</a>`;
         content[6].style.top = '100%'
         
     }
